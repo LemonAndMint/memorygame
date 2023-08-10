@@ -1,0 +1,73 @@
+/*body{
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+}
+/*canvas{
+
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -20%);
+    width: 100px;
+    height: 100px;
+  
+
+}
+
+#gameCanvas{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+/*canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#collisionCanvas {
+
+    position: fixed;
+    border-style: solid;
+    opacity: 1;
+
+}*/
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#gameCanvas {
+    position: absolute;
+    border-style: solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+}
+#collisionCanvas {
+
+    box-sizing: border-box;
+    position: absolute;
+    border-style: solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    opacity: 0;
+
+}
