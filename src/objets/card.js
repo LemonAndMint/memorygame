@@ -49,8 +49,12 @@ class Card{
             }
             else{
 
-                collisionCtx.fillStyle = this.color;
-                collisionCtx.fillRect(this.positionX, this.positionY, Card.cardWidth, Card.cardHeight);
+                if(!Game.isOver){
+
+                    collisionCtx.fillStyle = this.color;
+                    collisionCtx.fillRect(this.positionX, this.positionY, Card.cardWidth, Card.cardHeight);
+
+                }
 
                 ctx.drawImage(Card.sheetImg, Math.floor(Card.sheetWidth / 14) * 13, Math.floor(Card.sheetHeight / 4) * 3, 
                                             Card.frameWidth, Card.frameHeight, 
@@ -58,7 +62,7 @@ class Card{
                                             Card.cardWidth, Card.cardHeight);
                 
             }
-            
+
         }
         
     }
@@ -69,5 +73,7 @@ class Card{
         this.positionY = positionY;
 
     }
+
+
 
 }

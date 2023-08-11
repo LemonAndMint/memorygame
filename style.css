@@ -51,19 +51,30 @@ body {
 }
 #gameCanvas {
     position: absolute;
-    border-style: solid;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
+    opacity: 1;
+
+}
+#normalCanvas{
+
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 90%;
+
 }
 #collisionCanvas {
 
     box-sizing: border-box;
     position: absolute;
-    border-style: solid;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
