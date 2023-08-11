@@ -87,6 +87,7 @@ class Game{
         else if( currentCard.id != card.id ){
     
             Game.isOver = true;
+            Game.isEnded = true;
     
         }
     
